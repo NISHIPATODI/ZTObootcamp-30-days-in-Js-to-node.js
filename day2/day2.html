@@ -1,0 +1,133 @@
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="day2.css">
+    <title>Dom manipulation</title>
+
+   
+</head>
+<body>
+        <h3 id="head">this is html</h3>
+           
+       <ul id="list">
+            <li>
+                about
+            </li>
+            <li>
+                contact
+            </li>
+        
+        
+        </ul>
+
+
+        <ul id="list2">
+            <li>
+                follow
+            </li>
+            <li>
+                back
+            </li>
+        
+        
+        </ul>
+
+        
+
+<h1 onclick="this.innerHTML='<h5>Ooops!</h5>'">Click on this text!</h1>
+
+
+
+        <button class="btn">
+            clickme
+        </button>
+        
+        
+        <h1 onclick="changeText(this)">Click on this text!</h1>
+
+<script>
+function changeText(id) {
+  id.innerHTML = "Ooops!";
+}
+</script>
+
+
+<h1>FORM</h1>
+
+<form class="form">
+  <h5 for="fname"  onmouseover="bigImg(this)" onmouseout="normalImg(this)">First name:</h5>
+  <input type="text" id="fname" name="fname"><br><br>
+
+
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+
+  <input id="sub" type="submit" value="Submit">
+
+  </form>
+<h4 id="click">register</h4>
+
+<script>
+
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+  x.style.size = "64px";
+
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+  x.style.size = "32px";
+
+}
+
+</script>
+<p id="para">helloo this</p>
+<h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse over me</h1>
+
+<script>
+function mouseOver() {
+  document.getElementById("demo").style.color = "red";
+}
+
+function mouseOut() {
+  document.getElementById("demo").style.color = "black";
+}
+</script>
+
+<h3 id="dem">color change on hover</h3>
+
+<script>
+document.getElementById("dem").onmouseover = function() {mouseOver()};
+document.getElementById("dem").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+  document.getElementById("dem").style.color = "red";
+}
+
+function mouseOut() {
+  document.getElementById("dem").style.color = "black";
+}
+</script>
+
+<button id="lclick" onclick="lastclick()">Click me</button>
+
+<p id="pa">acvhhjbj</p>
+
+<script>
+function lastclick() {
+  document.getElementById("pa").innerHTML = "Hello World";
+}
+</script>
+
+        
+        <script type="text/javascript" src="day2.js"></script>
+   
+</body>
+</html>
