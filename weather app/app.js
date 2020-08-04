@@ -17,7 +17,7 @@ navigator.geolocation.getCurrentPosition(position=>{
     //long=75.233582;//bdnwr long
    // long=75.833;// indore long
    lat= position.coords.latitude;
-  lat= 23.020788;//bdnwr lat
+  //lat= 23.020788;//bdnwr lat
   //lat= 22.718; //indore lat
    const YOUR_API_KEY="3f708dab75cc2145a1461c138592ee42";
 
