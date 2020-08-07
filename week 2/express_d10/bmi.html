@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+
+
+ <title>Calculator</title>
+    <style>
+        *{
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        div{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            text-align: center;
+            
+        }
+        .button {
+  background-color: #4CAF50; /* Green */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="centerdiv">
+        <h1>
+           BMI Calculator
+        </h1>
+        <br>
+        <form method="post">
+            <input type="text" name="mass" placeholder="mass">
+            <br>
+            <input type="text" name="height" placeholder="height">
+            <br>
+<button type="submit" >calculate</button>
+<!--<div>
+    <button id="lclick" onclick="lastclick()">Display here</button>
+    <h1 id="pa"> sum is</h1>
+    </div>-->
+    
+        </form>
+    </div>
+
+  <!--  <script>
+        console.log("test");
+        function lastclick() {
+            let n1 =Number(req.body.mass);
+     let n2=Number(req.body.height);
+     let sum= n1/(n2*n2);
+     console.log("sum is");
+   console.log(n1);
+    document.getElementById("pa").innerHTML = sum;
+  }
+
+    </script>-->
+    
+</body>
+</html>

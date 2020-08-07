@@ -66,9 +66,9 @@ document.getElementById("sub").onmouseout = function() {mouseOut()};
 
 document.getElementById("sub").onclick = function() {lastclick()};
 
-
+var nishi= 56;
 function lastclick() {
-    document.getElementById("pa").innerHTML = "Hello World";
+    document.getElementById("pa").innerHTML = nishi;
   }
   
 function myFunction() {
