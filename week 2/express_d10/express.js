@@ -17,7 +17,6 @@ app.get("/contact",function(req,res){
     res.send("<h1>welcome to contact page</h1>");
 });
 
-
 app.post("/calculator", function(req,res){
    // res.send("thank you ");
     console.log(req.body);
